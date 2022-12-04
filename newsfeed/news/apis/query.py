@@ -127,7 +127,8 @@ def article_search(query_filter=None,
                    time_range: int = 60,
                    proxy: dict = None):
 
-    cpu_num = multiprocessing.cpu_count() * 2
+    #cpu_num = multiprocessing.cpu_count() * 2
+    cpu_num = 1
 
     if query_filter == None:
         return ValueError("Filter must be provided")
